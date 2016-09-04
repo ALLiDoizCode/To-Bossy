@@ -19,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="2lN-9g-1nc" kind="show" identifier="Page1" id="Jve-MN-eqm"/>
+                        <segue destination="2lN-9g-1nc" kind="presentation" identifier="Page1" modalTransitionStyle="crossDissolve" id="Jve-MN-eqm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -35,11 +35,12 @@
                         <viewControllerLayoutGuide type="bottom" id="2mW-fe-gm1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="q7T-dQ-hit">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="z0m-5N-3gn" kind="show" identifier="Page2" id="6yh-q3-0u0"/>
+                        <segue destination="z0m-5N-3gn" kind="presentation" identifier="Page2" modalTransitionStyle="crossDissolve" id="6yh-q3-0u0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcP-9z-sSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -55,6 +56,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yXs-ZP-7FR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bIN-O3-ksC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
