@@ -73,6 +73,20 @@ class ViewController: UIViewController {
     
     func goToPage1(){
         
+        guard email.text != "" else {
+            
+            print("we your bosses email")
+            
+            return
+        }
+        
+        guard company.text != "" else {
+            
+            print("we need the name of the company you work for")
+            
+            return
+        }
+        
         self.performSegueWithIdentifier("Page1", sender: self)
     }
 
@@ -81,6 +95,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let controller = segue.destinationViewController as! RatingPage1ViewController
+        
+        controller.email = email.text
+        controller.company = company.text
+    }
 }
 

@@ -30,6 +30,9 @@ class RatingPage2ViewController: UIViewController {
     var ratingSlider: UISlider!
     weak var ratingLabel: UILabel!
     let startRating:Float = 0
+    
+    var email:String!
+    var company:String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,6 +126,7 @@ class RatingPage2ViewController: UIViewController {
         
         back.setTitle("Back", forState: .Normal)
         back.setTitleColor(MaterialColor.cyan.darken1, forState: .Normal)
+        back.addTarget(self, action: #selector(RatingPage1ViewController.goBack), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(humor)
         self.view.addSubview(inspirational)
@@ -238,15 +242,26 @@ class RatingPage2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
+    func goBack(){
+        
+        self.performSegueWithIdentifier("Back", sender: self)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "Back" {
+            
+            let controller = segue.destinationViewController as! RatingPage1ViewController
+            
+            controller.email = email
+            controller.company = company
+        }
     }
-    */
+    
 
 }

@@ -20,6 +20,9 @@ class RatingPage1ViewController: UIViewController {
     var next:FlatButton = FlatButton()
     var back:FlatButton = FlatButton()
     
+    var email:String!
+    var company:String!
+    
     let ratingTexts = ["Very bad", "Bad", "Normal", "Good", "Very good", "Perfect"]
 
     override func viewDidLoad() {
@@ -40,7 +43,6 @@ class RatingPage1ViewController: UIViewController {
         next.addTarget(self, action: #selector(RatingPage1ViewController.goToPage2), forControlEvents: .TouchUpInside)
         
         rateValueLabel.textAlignment = .Center
-        //rateValueLabel.backgroundColor = UIColor.blueColor()
         
         myTitle.text = "How was work today?"
         myTitle.numberOfLines = 0
@@ -50,6 +52,7 @@ class RatingPage1ViewController: UIViewController {
         
         back.setTitle("Back", forState: .Normal)
         back.setTitleColor(MaterialColor.cyan.darken1, forState: .Normal)
+        back.addTarget(self, action: #selector(RatingPage1ViewController.goBack), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(rateValueLabel)
         self.view.addSubview(emojiRateView)
@@ -100,10 +103,16 @@ class RatingPage1ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        UIView.animateWithDuration(5) {
+        /*UIView.animateWithDuration(3) {
          
          self.titleView.layer.opacity = 0
-         }
+            
+         }*/
+        
+        UIView.animateWithDuration(0.75, delay: 2.5, options: .CurveEaseInOut, animations: { () -> Void in
+             self.titleView.alpha = 0
+            },
+            completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,15 +125,26 @@ class RatingPage1ViewController: UIViewController {
         self.performSegueWithIdentifier("Page2", sender: self)
     }
     
-
-    /*
+    func goBack(){
+        
+        self.performSegueWithIdentifier("Back", sender: self)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "Page2" {
+            
+            let controller = segue.destinationViewController as! RatingPage2ViewController
+            
+            controller.email = email
+            controller.company = company
+        }
     }
-    */
+    
 
 }
