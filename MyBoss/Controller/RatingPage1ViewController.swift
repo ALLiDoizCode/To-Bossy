@@ -33,6 +33,8 @@ class RatingPage1ViewController: UIViewController {
                 rateValue, self.ratingTexts[Int(rateValue)])
         }
         
+        emojiRateView.rateValue = 5
+    
         next.setTitle("Next", forState: .Normal)
         next.backgroundColor = MaterialColor.cyan.darken1
         next.addTarget(self, action: #selector(RatingPage1ViewController.goToPage2), forControlEvents: .TouchUpInside)
@@ -98,10 +100,10 @@ class RatingPage1ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        /* UIView.animateWithDuration(3) {
+        UIView.animateWithDuration(5) {
          
          self.titleView.layer.opacity = 0
-         }*/
+         }
     }
 
     override func didReceiveMemoryWarning() {
@@ -112,41 +114,6 @@ class RatingPage1ViewController: UIViewController {
     func goToPage2(){
         
         self.performSegueWithIdentifier("Page2", sender: self)
-    }
-    
-    
-    // Actions
-    
-    @IBAction func showEyesChanged(sender: UISwitch) {
-        emojiRateView.rateShowEyes = sender.on
-    }
-    
-    @IBAction func makeRandomColorRange(sender: UIButton) {
-        emojiRateView.rateColorRange = (newRandomColor(), newRandomColor())
-    }
-    
-    @IBAction func rateLineWidthChanged(sender: UISlider) {
-        emojiRateView.rateLineWidth = CGFloat(sender.value)
-    }
-    
-    @IBAction func mouthWidthChanged(sender: UISlider) {
-        emojiRateView.rateMouthWidth = CGFloat(sender.value)
-    }
-    
-    @IBAction func lipWidthChanged(sender: UISlider) {
-        emojiRateView.rateLipWidth = CGFloat(sender.value)
-    }
-    
-    @IBAction func eyeWidthChanged(sender: UISlider) {
-        emojiRateView.rateEyeWidth = CGFloat(sender.value)
-    }
-    
-    private func newRandomColor() -> UIColor {
-        return UIColor.init(hue: newRandomNumber(), saturation: newRandomNumber(), brightness: newRandomNumber(), alpha: newRandomNumber())
-    }
-    
-    private func newRandomNumber() -> CGFloat {
-        return CGFloat(Double(arc4random()) % 1000 / 1000)
     }
     
 
