@@ -19,8 +19,13 @@ class RatingPage2ViewController: UIViewController {
     var supportive:MaterialLabel = MaterialLabel()
     var optimism:MaterialLabel = MaterialLabel()
     var integrity:MaterialLabel = MaterialLabel()
+    var back:FlatButton = FlatButton()
     
-    var cosmosViewPrecise:CosmosView = CosmosView()
+    var cosmosHumor:CosmosView = CosmosView()
+    var cosmosInspirational:CosmosView = CosmosView()
+    var cosmosSupportive:CosmosView = CosmosView()
+    var cosmosOptimism:CosmosView = CosmosView()
+    var cosmosIntegrity:CosmosView = CosmosView()
     
     var ratingSlider: UISlider!
     weak var ratingLabel: UILabel!
@@ -29,35 +34,167 @@ class RatingPage2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cosmosViewPrecise.rating = 0
-        cosmosViewPrecise.settings.fillMode = .Precise
-        cosmosViewPrecise.settings.starSize = 30
-        cosmosViewPrecise.settings.filledColor = MaterialColor.cyan.darken1
-        //cosmosViewPrecise.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
-        cosmosViewPrecise.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
-        cosmosViewPrecise.settings.emptyBorderColor = MaterialColor.cyan.darken1
+        cosmosHumor.rating = 0
+        cosmosHumor.settings.fillMode = .Precise
+        cosmosHumor.settings.starSize = 30
+        cosmosHumor.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosHumor.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosHumor.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosHumor.settings.emptyBorderColor = MaterialColor.cyan.darken1
         
         // Register touch handlers
-        cosmosViewPrecise.didTouchCosmos = didTouchCosmos
+        cosmosHumor.didTouchCosmos = didTouchCosmos
+        cosmosHumor.didFinishTouchingCosmos = didFinishTouchingCosmos
+        self.view.addSubview(cosmosHumor)
         
-        cosmosViewPrecise.didFinishTouchingCosmos = didFinishTouchingCosmos
+        cosmosInspirational.rating = 0
+        cosmosInspirational.settings.fillMode = .Precise
+        cosmosInspirational.settings.starSize = 30
+        cosmosInspirational.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosInspirational.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosInspirational.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosInspirational.settings.emptyBorderColor = MaterialColor.cyan.darken1
+        
+        // Register touch handlers
+        cosmosInspirational.didTouchCosmos = didTouchCosmos
+        cosmosInspirational.didFinishTouchingCosmos = didFinishTouchingCosmos
+        self.view.addSubview(cosmosInspirational)
+        
+        cosmosSupportive.rating = 0
+        cosmosSupportive.settings.fillMode = .Precise
+        cosmosSupportive.settings.starSize = 30
+        cosmosSupportive.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosSupportive.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosSupportive.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosSupportive.settings.emptyBorderColor = MaterialColor.cyan.darken1
+        
+        // Register touch handlers
+        cosmosSupportive.didTouchCosmos = didTouchCosmos
+        cosmosSupportive.didFinishTouchingCosmos = didFinishTouchingCosmos
+        self.view.addSubview(cosmosSupportive)
+        
+        cosmosOptimism.rating = 0
+        cosmosOptimism.settings.fillMode = .Precise
+        cosmosOptimism.settings.starSize = 30
+        cosmosOptimism.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosOptimism.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosOptimism.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosOptimism.settings.emptyBorderColor = MaterialColor.cyan.darken1
+        
+        // Register touch handlers
+        cosmosOptimism.didTouchCosmos = didTouchCosmos
+        cosmosOptimism.didFinishTouchingCosmos = didFinishTouchingCosmos
+        self.view.addSubview(cosmosOptimism)
+        
+        cosmosIntegrity.rating = 0
+        cosmosIntegrity.settings.fillMode = .Precise
+        cosmosIntegrity.settings.starSize = 30
+        cosmosIntegrity.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosIntegrity.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosIntegrity.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosIntegrity.settings.emptyBorderColor = MaterialColor.cyan.darken1
+        
+        // Register touch handlers
+        cosmosIntegrity.didTouchCosmos = didTouchCosmos
+        cosmosIntegrity.didFinishTouchingCosmos = didFinishTouchingCosmos
+
+        self.view.addSubview(cosmosIntegrity)
+        
+        
+        humor.text = "Humor"
+        humor.textAlignment = .Center
+        humor.font = RobotoFont.mediumWithSize(24)
+        
+        inspirational.text = "Inspirational"
+        inspirational.textAlignment = .Center
+        inspirational.font = RobotoFont.mediumWithSize(24)
+        
+        supportive.text = "Supportive"
+        supportive.textAlignment = .Center
+        supportive.font = RobotoFont.mediumWithSize(24)
+        
+        optimism.text = "Optimism"
+        optimism.textAlignment = .Center
+        optimism.font = RobotoFont.mediumWithSize(24)
+        
+        integrity.text = "Integrity"
+        integrity.textAlignment = .Center
+        integrity.font = RobotoFont.mediumWithSize(24)
+        
+        back.setTitle("Back", forState: .Normal)
+        back.setTitleColor(MaterialColor.cyan.darken1, forState: .Normal)
         
         self.view.addSubview(humor)
         self.view.addSubview(inspirational)
         self.view.addSubview(supportive)
         self.view.addSubview(optimism)
         self.view.addSubview(integrity)
-        self.view.addSubview(cosmosViewPrecise)
+        self.view.addSubview(back)
         
-        let views = [humor,inspirational,supportive,optimism,integrity,cosmosViewPrecise]
+        let views = [humor,inspirational,supportive,optimism,integrity,cosmosHumor,cosmosInspirational,cosmosSupportive,cosmosOptimism,cosmosIntegrity,back]
         
         constrain(views) { _views in
             
             let superview = _views[0].superview
             
+            _views[0].left == (superview!.left) + 20
+            _views[0].right == (superview!.right) - 20
+            _views[0].top == (superview?.top)! + 50
+            _views[0].height == 30
+            
+            _views[1].left == (superview!.left) + 20
+            _views[1].right == (superview!.right) - 20
+            _views[1].top ==  _views[0].bottom + 75
+            _views[1].height == 30
+            
+            _views[2].left == (superview!.left) + 20
+            _views[2].right == (superview!.right) - 20
+            _views[2].top ==  _views[1].bottom + 75
+            _views[2].height == 30
+            
+            _views[3].left == (superview!.left) + 20
+            _views[3].right == (superview!.right) - 20
+            _views[3].top ==  _views[2].bottom + 75
+            _views[3].height == 30
+            
+            _views[4].left == (superview!.left) + 20
+            _views[4].right == (superview!.right) - 20
+            _views[4].top ==  _views[3].bottom + 75
+            _views[4].height == 30
+            
+            //stars
             _views[5].center == (superview?.center)!
+            _views[5].top == _views[0].bottom + 25
             //_views[5].width == 300
-            _views[5].height == 100
+            //_views[5].height == 100
+            
+            _views[6].centerX == (superview?.centerX)!
+            _views[6].top == _views[1].bottom + 25
+            //_views[6].width == 300
+            //_views[6].height == 100
+            
+            _views[7].centerX == (superview?.centerX)!
+            _views[7].top == _views[2].bottom + 25
+            //_views[6].width == 300
+            //_views[6].height == 100
+            
+            _views[8].centerX == (superview?.centerX)!
+            _views[8].top == _views[3].bottom + 25
+            //_views[6].width == 300
+            //_views[6].height == 100
+            
+            _views[9].centerX == (superview?.centerX)!
+            _views[9].top == _views[4].bottom + 25
+           // _views[6].width == 300
+            //_views[6].height == 100
+            
+            //backBtn
+            _views[10].left == (superview?.left)!
+            _views[10].top == (superview?.top)! + 20
+            _views[10].width == 75
+            _views[10].height == 30
+            
+            
         }
 
         // Do any additional setup after loading the view.
@@ -74,6 +211,23 @@ class RatingPage2ViewController: UIViewController {
     }
     
     private func didFinishTouchingCosmos(rating: Double) {
+        
+        var count = 0
+        
+        let stars = [cosmosHumor,cosmosInspirational,cosmosSupportive,cosmosOptimism,cosmosIntegrity]
+        
+        for star in stars {
+            
+            if star.rating != 0 {
+                
+                count = count + 1
+            }
+            
+            if count == 5 {
+                
+                print("Done")
+            }
+        }
         //ratingSlider.value = Float(rating)
         //self.ratingLabel.text = RatingPage2ViewController.formatValue(rating)
         //ratingLabel.textColor = UIColor(red: 183/255, green: 186/255, blue: 204/255, alpha: 1)

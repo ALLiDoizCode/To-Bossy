@@ -19,5 +19,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyBoss/Controller/RatingPage2ViewController.swift"
+            timestampString = "494666296.187128"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "didFinishTouchingCosmos(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "To_Bossy.RatingPage2ViewController.(didFinishTouchingCosmos in _9B5F2F8DB9E77DC3CBDB3AEF0FD2B0E7) (Swift.Double) -&gt; ()"
+                  moduleName = "To Bossy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan/Documents/Projects/MyBoss/MyBoss/Controller/RatingPage2ViewController.swift"
+                  timestampString = "494665796.315527"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "To_Bossy.RatingPage2ViewController.(didFinishTouchingCosmos in _9B5F2F8DB9E77DC3CBDB3AEF0FD2B0E7) (Swift.Double) -&gt; ()"
+                  moduleName = "To Bossy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jonathan/Documents/Projects/MyBoss/MyBoss/Controller/RatingPage2ViewController.swift"
+                  timestampString = "494665796.316398"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "205"
+                  endingLineNumber = "205"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
