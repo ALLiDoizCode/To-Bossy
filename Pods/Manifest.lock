@@ -1,21 +1,34 @@
 PODS:
   - Cartography (0.6.0)
+  - Cosmos (1.2.3)
   - IQKeyboardManagerSwift (4.0.4)
   - Material (1.42.8)
   - TTGEmojiRate (0.1.6)
 
 DEPENDENCIES:
   - Cartography (~> 0.6.0)
+  - Cosmos (from `https://github.com/marketplacer/Cosmos.git`, branch `swift-2.3`)
   - IQKeyboardManagerSwift
   - Material (~> 1.42.8)
   - TTGEmojiRate (~> 0.1.6)
 
+EXTERNAL SOURCES:
+  Cosmos:
+    :branch: swift-2.3
+    :git: https://github.com/marketplacer/Cosmos.git
+
+CHECKOUT OPTIONS:
+  Cosmos:
+    :commit: 2ee4a896fcbdc915e95bcb7456f996c27492fb34
+    :git: https://github.com/marketplacer/Cosmos.git
+
 SPEC CHECKSUMS:
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   Material: dfe8929ff2a23044a16609314bb46f060bc8ebee
   TTGEmojiRate: 52bfbd96db1616617f9257d249030e3cbef748dc
 
-PODFILE CHECKSUM: 72a55db7d48b7c06e4cbe5184ec8f29bea286a2a
+PODFILE CHECKSUM: e505552dc4a5d82b2d894d2e76aa995e5bac8b79
 
 COCOAPODS: 1.0.1

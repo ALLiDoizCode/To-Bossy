@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '00319BD270BE0332B326871DF10E3B01'
-               BlueprintName = 'TTGEmojiRate'
+               BlueprintIdentifier = '608B49B5DDACC601EE8044A1931993F9'
+               BlueprintName = 'Cosmos'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TTGEmojiRate.framework'>
+               BuildableName = 'Cosmos.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

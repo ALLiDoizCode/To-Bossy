@@ -38,10 +38,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="z0m-5N-3gn" kind="show" identifier="Page2" id="6yh-q3-0u0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcP-9z-sSQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="907.5" y="461.25"/>
+        </scene>
+        <!--Rating Page2 View Controller-->
+        <scene sceneID="5dX-jQ-3uj">
+            <objects>
+                <viewController id="z0m-5N-3gn" customClass="RatingPage2ViewController" customModule="To_Bossy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IIk-Lc-mLZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yXs-ZP-7FR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIN-O3-ksC">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jts-sS-weW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="461.25"/>
         </scene>
     </scenes>
 </document>

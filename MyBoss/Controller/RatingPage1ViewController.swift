@@ -15,6 +15,8 @@ class RatingPage1ViewController: UIViewController {
     
     var rateValueLabel: MaterialLabel! = MaterialLabel()
     var emojiRateView: EmojiRateView! = EmojiRateView()
+    var next:FlatButton = FlatButton()
+    
     let ratingTexts = ["Very bad", "Bad", "Normal", "Good", "Very good", "Perfect"]
 
     override func viewDidLoad() {
@@ -26,14 +28,18 @@ class RatingPage1ViewController: UIViewController {
                 rateValue, self.ratingTexts[Int(rateValue)])
         }
         
+        next.setTitle("Next", forState: .Normal)
+        next.backgroundColor = MaterialColor.cyan.darken1
+        next.addTarget(self, action: #selector(RatingPage1ViewController.goToPage2), forControlEvents: .TouchUpInside)
         
         rateValueLabel.textAlignment = .Center
         //rateValueLabel.backgroundColor = UIColor.blueColor()
         
         self.view.addSubview(rateValueLabel)
         self.view.addSubview(emojiRateView)
+        self.view.addSubview(next)
         
-        let views = [emojiRateView,rateValueLabel]
+        let views = [emojiRateView,rateValueLabel,next]
         
         constrain(views) { _views in
             
@@ -50,6 +56,11 @@ class RatingPage1ViewController: UIViewController {
             _views[1].right == (superView?.right)! - 20
             _views[1].height == 50
             
+            _views[2].centerX == (superView?.centerX)!
+            _views[2].bottom ==  (superView?.bottom)! - 50
+            _views[2].left == (superView?.left)! + 50
+            _views[2].right ==  (superView?.right)! - 50
+            
         }
         
         // Do any additional setup after loading the view.
@@ -58,6 +69,11 @@ class RatingPage1ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func goToPage2(){
+        
+        self.performSegueWithIdentifier("Page2", sender: self)
     }
     
     
