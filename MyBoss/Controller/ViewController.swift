@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         
         next.setTitle("Next", forState: .Normal)
         next.backgroundColor = MaterialColor.cyan.darken1
+        next.addTarget(self, action: #selector(ViewController.goToPage1), forControlEvents: .TouchUpInside)
         
         myTitle.text = "To Bossy"
         myTitle.font = RobotoFont.boldWithSize(32)
@@ -68,6 +69,11 @@ class ViewController: UIViewController {
             _views[3].right ==  (superView?.right)! - 50
         }
         
+    }
+    
+    func goToPage1(){
+        
+        self.performSegueWithIdentifier("Page1", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
