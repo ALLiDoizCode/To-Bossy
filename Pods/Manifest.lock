@@ -1,5 +1,8 @@
 PODS:
   - Cartography (0.6.0)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
   - Cosmos (1.2.3)
   - IQKeyboardManagerSwift (4.0.4)
   - Material (1.42.8)
@@ -7,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - Cartography (~> 0.6.0)
+  - ChameleonFramework/Swift
   - Cosmos (from `https://github.com/marketplacer/Cosmos.git`, branch `swift-2.3`)
   - IQKeyboardManagerSwift
   - Material (~> 1.42.8)
@@ -24,11 +28,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
   IQKeyboardManagerSwift: e0964d04d6a29b71016fd346dca13ecb80a2823a
   Material: dfe8929ff2a23044a16609314bb46f060bc8ebee
   TTGEmojiRate: 52bfbd96db1616617f9257d249030e3cbef748dc
 
-PODFILE CHECKSUM: e505552dc4a5d82b2d894d2e76aa995e5bac8b79
+PODFILE CHECKSUM: afa7a2f2b0681e513d2f475f1992aa1be1a14f1f
 
 COCOAPODS: 1.0.1

@@ -8,6 +8,7 @@
 
 import UIKit
 import Material
+import ChameleonFramework
 import Cartography
 import Cosmos
 
@@ -32,6 +33,9 @@ class RatingPage2ViewController: UIViewController {
         cosmosViewPrecise.settings.fillMode = .Precise
         cosmosViewPrecise.settings.starSize = 30
         cosmosViewPrecise.settings.filledColor = MaterialColor.cyan.darken1
+        //cosmosViewPrecise.settings.emptyColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosViewPrecise.settings.filledBorderColor = UIColor(complementaryFlatColorOf: MaterialColor.cyan.darken1, withAlpha: 1)
+        cosmosViewPrecise.settings.emptyBorderColor = MaterialColor.cyan.darken1
         
         // Register touch handlers
         cosmosViewPrecise.didTouchCosmos = didTouchCosmos

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0F57ADDA5FF1DF36124140A3F497A73D'
-               BlueprintName = 'TTGEmojiRate'
+               BlueprintIdentifier = '5172ACAB7FEA22813859DC97CA0AA16F'
+               BlueprintName = 'ChameleonFramework'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TTGEmojiRate.framework'>
+               BuildableName = 'ChameleonFramework.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
