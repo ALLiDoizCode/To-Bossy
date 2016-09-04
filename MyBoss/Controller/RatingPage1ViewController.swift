@@ -13,6 +13,7 @@ import Cartography
 
 class RatingPage1ViewController: UIViewController {
     
+    var myTitle:MaterialLabel = MaterialLabel()
     var rateValueLabel: MaterialLabel! = MaterialLabel()
     var emojiRateView: EmojiRateView! = EmojiRateView()
     var next:FlatButton = FlatButton()
@@ -35,11 +36,17 @@ class RatingPage1ViewController: UIViewController {
         rateValueLabel.textAlignment = .Center
         //rateValueLabel.backgroundColor = UIColor.blueColor()
         
+        myTitle.text = "How was work today?"
+        myTitle.textColor = MaterialColor.cyan.darken1
+        myTitle.textAlignment = .Center
+        myTitle.font = RobotoFont.regularWithSize(24)
+        
         self.view.addSubview(rateValueLabel)
         self.view.addSubview(emojiRateView)
         self.view.addSubview(next)
+        self.view.addSubview(myTitle)
         
-        let views = [emojiRateView,rateValueLabel,next]
+        let views = [emojiRateView,rateValueLabel,next,myTitle]
         
         constrain(views) { _views in
             
@@ -50,16 +57,19 @@ class RatingPage1ViewController: UIViewController {
             _views[0].right == (superView?.right)! - 20
             _views[0].height == _views[0].width
             
-            _views[1].centerX == (superView?.centerX)!
             _views[1].bottom == _views[0].top - 20
             _views[1].left == (superView?.left)! + 20
             _views[1].right == (superView?.right)! - 20
             _views[1].height == 50
             
-            _views[2].centerX == (superView?.centerX)!
             _views[2].bottom ==  (superView?.bottom)! - 50
             _views[2].left == (superView?.left)! + 50
             _views[2].right ==  (superView?.right)! - 50
+            
+            _views[3].bottom == _views[1].top - 20
+            _views[3].left == (superView?.left)! + 20
+            _views[3].right == (superView?.right)! - 20
+            _views[3].height == 30
             
         }
         
