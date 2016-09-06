@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABB2EE321D7E681E0088D642 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2EE311D7E681E0088D642 /* Client.swift */; };
+		ABB2EE351D7E6A130088D642 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2EE341D7E6A130088D642 /* Rating.swift */; };
+		ABB2EE381D7E6CFC0088D642 /* PresentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB2EE371D7E6CFC0088D642 /* PresentRating.swift */; };
+		ABD089BB1D7BE07300137EC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD089BA1D7BE07300137EC6 /* AppDelegate.swift */; };
+		ABD089BD1D7BE07300137EC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD089BC1D7BE07300137EC6 /* ViewController.swift */; };
+		ABD089C01D7BE07300137EC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD089BE1D7BE07300137EC6 /* Main.storyboard */; };
+		ABD089C21D7BE07300137EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD089C11D7BE07300137EC6 /* Assets.xcassets */; };
+		ABD089C51D7BE07300137EC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD089C31D7BE07300137EC6 /* LaunchScreen.storyboard */; };
+		ABD089D01D7BE07300137EC6 /* MyBossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD089CF1D7BE07300137EC6 /* MyBossTests.swift */; };
+		ABD089DB1D7BE07300137EC6 /* MyBossUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD089DA1D7BE07300137EC6 /* MyBossUITests.swift */; };
+		ABE202971D7BEB3000DF5136 /* RatingPage1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE202961D7BEB3000DF5136 /* RatingPage1ViewController.swift */; };
+		ABE202991D7BEFF800DF5136 /* RatingPage2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE202981D7BEFF800DF5136 /* RatingPage2ViewController.swift */; };
+		AD79932F37B8CF051244816E /* Pods_MyBoss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF685090777397C4B5246DBD /* Pods_MyBoss.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABD089CC1D7BE07300137EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD089AF1D7BE07300137EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABD089B61D7BE07300137EC6;
+			remoteInfo = MyBoss;
+		};
+		ABD089D71D7BE07300137EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABD089AF1D7BE07300137EC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABD089B61D7BE07300137EC6;
+			remoteInfo = MyBoss;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DBACD6F3D0B8BFE178C54AC /* Pods-MyBoss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBoss.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyBoss/Pods-MyBoss.debug.xcconfig"; sourceTree = "<group>"; };
+		ABB2EE311D7E681E0088D642 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		ABB2EE341D7E6A130088D642 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		ABB2EE371D7E6CFC0088D642 /* PresentRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentRating.swift; sourceTree = "<group>"; };
+		ABD089B71D7BE07300137EC6 /* To Bossy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Bossy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD089BA1D7BE07300137EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABD089BC1D7BE07300137EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABD089BF1D7BE07300137EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABD089C11D7BE07300137EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD089C41D7BE07300137EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABD089C61D7BE07300137EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD089CB1D7BE07300137EC6 /* MyBossTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBossTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD089CF1D7BE07300137EC6 /* MyBossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBossTests.swift; sourceTree = "<group>"; };
+		ABD089D11D7BE07300137EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD089D61D7BE07300137EC6 /* MyBossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBossUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD089DA1D7BE07300137EC6 /* MyBossUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBossUITests.swift; sourceTree = "<group>"; };
+		ABD089DC1D7BE07300137EC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABE202961D7BEB3000DF5136 /* RatingPage1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingPage1ViewController.swift; sourceTree = "<group>"; };
+		ABE202981D7BEFF800DF5136 /* RatingPage2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingPage2ViewController.swift; sourceTree = "<group>"; };
+		DF685090777397C4B5246DBD /* Pods_MyBoss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBoss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED14FF2E15E5263CC507F1EA /* Pods-MyBoss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBoss.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyBoss/Pods-MyBoss.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD089B41D7BE07300137EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD79932F37B8CF051244816E /* Pods_MyBoss.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089C81D7BE07300137EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089D31D7BE07300137EC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D64D1D1ABA6AF1B04C7F15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF685090777397C4B5246DBD /* Pods_MyBoss.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B6BD24F22759473A26837A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DBACD6F3D0B8BFE178C54AC /* Pods-MyBoss.debug.xcconfig */,
+				ED14FF2E15E5263CC507F1EA /* Pods-MyBoss.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABB2EE301D7E68010088D642 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2EE311D7E681E0088D642 /* Client.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		ABB2EE331D7E6A010088D642 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2EE341D7E6A130088D642 /* Rating.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABB2EE361D7E6CC40088D642 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2EE371D7E6CFC0088D642 /* PresentRating.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		ABD089AE1D7BE07300137EC6 = {
+			isa = PBXGroup;
+			children = (
+				ABD089B91D7BE07300137EC6 /* MyBoss */,
+				ABD089CE1D7BE07300137EC6 /* MyBossTests */,
+				ABD089D91D7BE07300137EC6 /* MyBossUITests */,
+				ABD089B81D7BE07300137EC6 /* Products */,
+				41B6BD24F22759473A26837A /* Pods */,
+				13D64D1D1ABA6AF1B04C7F15 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD089B81D7BE07300137EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD089B71D7BE07300137EC6 /* To Bossy.app */,
+				ABD089CB1D7BE07300137EC6 /* MyBossTests.xctest */,
+				ABD089D61D7BE07300137EC6 /* MyBossUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD089B91D7BE07300137EC6 /* MyBoss */ = {
+			isa = PBXGroup;
+			children = (
+				ABB2EE361D7E6CC40088D642 /* Presenters */,
+				ABB2EE331D7E6A010088D642 /* Models */,
+				ABB2EE301D7E68010088D642 /* Client */,
+				ABE202951D7BEADD00DF5136 /* Controller */,
+				ABD089BA1D7BE07300137EC6 /* AppDelegate.swift */,
+				ABD089BE1D7BE07300137EC6 /* Main.storyboard */,
+				ABD089C11D7BE07300137EC6 /* Assets.xcassets */,
+				ABD089C31D7BE07300137EC6 /* LaunchScreen.storyboard */,
+				ABD089C61D7BE07300137EC6 /* Info.plist */,
+			);
+			path = MyBoss;
+			sourceTree = "<group>";
+		};
+		ABD089CE1D7BE07300137EC6 /* MyBossTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD089CF1D7BE07300137EC6 /* MyBossTests.swift */,
+				ABD089D11D7BE07300137EC6 /* Info.plist */,
+			);
+			path = MyBossTests;
+			sourceTree = "<group>";
+		};
+		ABD089D91D7BE07300137EC6 /* MyBossUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD089DA1D7BE07300137EC6 /* MyBossUITests.swift */,
+				ABD089DC1D7BE07300137EC6 /* Info.plist */,
+			);
+			path = MyBossUITests;
+			sourceTree = "<group>";
+		};
+		ABE202951D7BEADD00DF5136 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABD089BC1D7BE07300137EC6 /* ViewController.swift */,
+				ABE202961D7BEB3000DF5136 /* RatingPage1ViewController.swift */,
+				ABE202981D7BEFF800DF5136 /* RatingPage2ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABD089B61D7BE07300137EC6 /* MyBoss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD089DF1D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBoss" */;
+			buildPhases = (
+				E26B003EA3ADE25267173C63 /* [CP] Check Pods Manifest.lock */,
+				ABD089B31D7BE07300137EC6 /* Sources */,
+				ABD089B41D7BE07300137EC6 /* Frameworks */,
+				ABD089B51D7BE07300137EC6 /* Resources */,
+				FCB1F25C28C13AE895F7F537 /* [CP] Embed Pods Frameworks */,
+				0F576AFED8C580E58F6FB9CB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBoss;
+			productName = MyBoss;
+			productReference = ABD089B71D7BE07300137EC6 /* To Bossy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABD089CA1D7BE07300137EC6 /* MyBossTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD089E21D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBossTests" */;
+			buildPhases = (
+				ABD089C71D7BE07300137EC6 /* Sources */,
+				ABD089C81D7BE07300137EC6 /* Frameworks */,
+				ABD089C91D7BE07300137EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABD089CD1D7BE07300137EC6 /* PBXTargetDependency */,
+			);
+			name = MyBossTests;
+			productName = MyBossTests;
+			productReference = ABD089CB1D7BE07300137EC6 /* MyBossTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABD089D51D7BE07300137EC6 /* MyBossUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD089E51D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBossUITests" */;
+			buildPhases = (
+				ABD089D21D7BE07300137EC6 /* Sources */,
+				ABD089D31D7BE07300137EC6 /* Frameworks */,
+				ABD089D41D7BE07300137EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABD089D81D7BE07300137EC6 /* PBXTargetDependency */,
+			);
+			name = MyBossUITests;
+			productName = MyBossUITests;
+			productReference = ABD089D61D7BE07300137EC6 /* MyBossUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD089AF1D7BE07300137EC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = NerdHouse;
+				TargetAttributes = {
+					ABD089B61D7BE07300137EC6 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					ABD089CA1D7BE07300137EC6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = ABD089B61D7BE07300137EC6;
+					};
+					ABD089D51D7BE07300137EC6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = ABD089B61D7BE07300137EC6;
+					};
+				};
+			};
+			buildConfigurationList = ABD089B21D7BE07300137EC6 /* Build configuration list for PBXProject "MyBoss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABD089AE1D7BE07300137EC6;
+			productRefGroup = ABD089B81D7BE07300137EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD089B61D7BE07300137EC6 /* MyBoss */,
+				ABD089CA1D7BE07300137EC6 /* MyBossTests */,
+				ABD089D51D7BE07300137EC6 /* MyBossUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD089B51D7BE07300137EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD089C51D7BE07300137EC6 /* LaunchScreen.storyboard in Resources */,
+				ABD089C21D7BE07300137EC6 /* Assets.xcassets in Resources */,
+				ABD089C01D7BE07300137EC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089C91D7BE07300137EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089D41D7BE07300137EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F576AFED8C580E58F6FB9CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyBoss/Pods-MyBoss-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26B003EA3ADE25267173C63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB1F25C28C13AE895F7F537 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyBoss/Pods-MyBoss-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD089B31D7BE07300137EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB2EE351D7E6A130088D642 /* Rating.swift in Sources */,
+				ABD089BD1D7BE07300137EC6 /* ViewController.swift in Sources */,
+				ABE202991D7BEFF800DF5136 /* RatingPage2ViewController.swift in Sources */,
+				ABD089BB1D7BE07300137EC6 /* AppDelegate.swift in Sources */,
+				ABB2EE321D7E681E0088D642 /* Client.swift in Sources */,
+				ABB2EE381D7E6CFC0088D642 /* PresentRating.swift in Sources */,
+				ABE202971D7BEB3000DF5136 /* RatingPage1ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089C71D7BE07300137EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD089D01D7BE07300137EC6 /* MyBossTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD089D21D7BE07300137EC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD089DB1D7BE07300137EC6 /* MyBossUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABD089CD1D7BE07300137EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABD089B61D7BE07300137EC6 /* MyBoss */;
+			targetProxy = ABD089CC1D7BE07300137EC6 /* PBXContainerItemProxy */;
+		};
+		ABD089D81D7BE07300137EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABD089B61D7BE07300137EC6 /* MyBoss */;
+			targetProxy = ABD089D71D7BE07300137EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABD089BE1D7BE07300137EC6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABD089BF1D7BE07300137EC6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABD089C31D7BE07300137EC6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABD089C41D7BE07300137EC6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABD089DD1D7BE07300137EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABD089DE1D7BE07300137EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD089E01D7BE07300137EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DBACD6F3D0B8BFE178C54AC /* Pods-MyBoss.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyBoss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBoss;
+				PRODUCT_NAME = "To Bossy";
+			};
+			name = Debug;
+		};
+		ABD089E11D7BE07300137EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED14FF2E15E5263CC507F1EA /* Pods-MyBoss.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyBoss/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBoss;
+				PRODUCT_NAME = "To Bossy";
+			};
+			name = Release;
+		};
+		ABD089E31D7BE07300137EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyBossTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBossTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyBoss.app/MyBoss";
+			};
+			name = Debug;
+		};
+		ABD089E41D7BE07300137EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyBossTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBossTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyBoss.app/MyBoss";
+			};
+			name = Release;
+		};
+		ABD089E61D7BE07300137EC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyBossUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBossUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyBoss;
+			};
+			name = Debug;
+		};
+		ABD089E71D7BE07300137EC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyBossUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBossUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyBoss;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD089B21D7BE07300137EC6 /* Build configuration list for PBXProject "MyBoss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD089DD1D7BE07300137EC6 /* Debug */,
+				ABD089DE1D7BE07300137EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD089DF1D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBoss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD089E01D7BE07300137EC6 /* Debug */,
+				ABD089E11D7BE07300137EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD089E21D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBossTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD089E31D7BE07300137EC6 /* Debug */,
+				ABD089E41D7BE07300137EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD089E51D7BE07300137EC6 /* Build configuration list for PBXNativeTarget "MyBossUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD089E61D7BE07300137EC6 /* Debug */,
+				ABD089E71D7BE07300137EC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABD089AF1D7BE07300137EC6 /* Project object */;
+}
