@@ -13,16 +13,18 @@ class Ratings {
     var company:String!
     var email:String!
     var humor:Float!
+    var feeling:Float!
     var inspiration:Float!
     var integrity:Float!
     var optimism:Float!
     var supportive:Float!
     
-    init(company:String,email:String,humor:Float,inspiration:Float,integrity:Float,optimism:Float,supportive:Float){
+    init(company:String,email:String,humor:Float,inspiration:Float,integrity:Float,optimism:Float,supportive:Float,feeling:Float){
         
         self.company = company
         self.email = email
         self.humor = humor
+        self.feeling = feeling
         self.inspiration = inspiration
         self.integrity = integrity
         self.optimism = optimism

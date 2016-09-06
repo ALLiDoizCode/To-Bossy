@@ -24,6 +24,7 @@ class Client {
             "company" : Rate.company,
             "email" : Rate.email,
             "humor" : Rate.humor,
+            "feeling":Rate.feeling,
             "inspirational" : Rate.inspiration,
             "integrity" : Rate.integrity,
             "optimism" : Rate.optimism,

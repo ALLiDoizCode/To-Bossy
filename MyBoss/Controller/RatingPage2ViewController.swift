@@ -13,6 +13,7 @@ import Cartography
 import Cosmos
 import MessageUI
 import SwiftEventBus
+import SCLAlertView
 
 class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDelegate {
     
@@ -237,11 +238,28 @@ class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDel
             
             if count == 5 {
                 
-                let myRating = Ratings(company: company, email: email, humor: Float(cosmosHumor.rating), inspiration: Float(cosmosInspirational.rating), integrity: Float(cosmosIntegrity.rating), optimism: Float(cosmosOptimism.rating), supportive: Float(cosmosSupportive.rating))
+                let myRating = Ratings(company: company, email: email, humor: Float(cosmosHumor.rating), inspiration: Float(cosmosInspirational.rating), integrity: Float(cosmosIntegrity.rating), optimism: Float(cosmosOptimism.rating), supportive: Float(cosmosSupportive.rating),feeling:Float(rate))
                 
                 SwiftEventBus.onMainThread(self, name: "Done", handler: { (result) in
+            
                     
-                    self.performSegueWithIdentifier("Home", sender: self)
+                    let appearance = SCLAlertView.SCLAppearance(
+                        kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                        kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                        kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                        showCloseButton: false
+                    )
+                    
+                    let alertView = SCLAlertView(appearance: appearance)
+            
+                    alertView.addButton("OK") {
+                        print("OK button tapped")
+                        alertView.hideView()
+                        self.performSegueWithIdentifier("Home", sender: self)
+                    }
+                    alertView.showSuccess("Success", subTitle: "Your Evaluation Has Been Sent To Your Boss")
+                    
+                    
                 })
                 
                 self.presenter.sendRate(myRating)
