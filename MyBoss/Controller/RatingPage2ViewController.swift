@@ -11,8 +11,10 @@ import Material
 import ChameleonFramework
 import Cartography
 import Cosmos
+import MessageUI
+import SwiftEventBus
 
-class RatingPage2ViewController: UIViewController {
+class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDelegate {
     
     var humor:MaterialLabel = MaterialLabel()
     var inspirational:MaterialLabel = MaterialLabel()
@@ -27,15 +29,20 @@ class RatingPage2ViewController: UIViewController {
     var cosmosOptimism:CosmosView = CosmosView()
     var cosmosIntegrity:CosmosView = CosmosView()
     
+    let presenter = PresentRating()
+    
     var ratingSlider: UISlider!
     weak var ratingLabel: UILabel!
     let startRating:Float = 0
     
     var email:String!
     var company:String!
+    var rate:Float!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //sendEmail()
         
         cosmosHumor.rating = 0
         cosmosHumor.settings.fillMode = .Precise
@@ -209,6 +216,7 @@ class RatingPage2ViewController: UIViewController {
     }
     
     private func didTouchCosmos(rating: Double) {
+        
         //ratingSlider.value = Float(rating)
         //ratingLabel.text = RatingPage2ViewController.formatValue(rating)
         //ratingLabel.textColor = UIColor(red: 133/255, green: 116/255, blue: 154/255, alpha: 1)
@@ -229,6 +237,15 @@ class RatingPage2ViewController: UIViewController {
             
             if count == 5 {
                 
+                let myRating = Ratings(company: company, email: email, humor: Float(cosmosHumor.rating), inspiration: Float(cosmosInspirational.rating), integrity: Float(cosmosIntegrity.rating), optimism: Float(cosmosOptimism.rating), supportive: Float(cosmosSupportive.rating))
+                
+                SwiftEventBus.onMainThread(self, name: "Done", handler: { (result) in
+                    
+                    self.performSegueWithIdentifier("Home", sender: self)
+                })
+                
+                self.presenter.sendRate(myRating)
+                
                 print("Done")
             }
         }
@@ -245,6 +262,23 @@ class RatingPage2ViewController: UIViewController {
     func goBack(){
         
         self.performSegueWithIdentifier("Back", sender: self)
+    }
+    
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients(["dev.jonathan.green@gmail.com"])
+            mail.setMessageBody("<body><img src=\"http://www.w3schools.com/html/html5.gif\" alt=\"HTML5 Icon\" style=\"width:128px;height:128px;\"></body>", isHTML: true)
+            
+            presentViewController(mail, animated: true, completion: nil)
+        } else {
+            // show failure alert
+        }
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
     
     // MARK: - Navigation

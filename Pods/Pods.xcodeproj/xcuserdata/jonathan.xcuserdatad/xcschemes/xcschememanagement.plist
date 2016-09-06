@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Cartography.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +49,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftEventBus.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>TTGEmojiRate-TTGEmojiRate.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,11 +82,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0F57ADDA5FF1DF36124140A3F497A73D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1520003FEBEC114D6C84F832AFEDB994</key>
 		<dict>
 			<key>primary</key>
@@ -82,7 +92,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2845480580582762DD9DB4297A463B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5172ACAB7FEA22813859DC97CA0AA16F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53D1E8FB282CFEA4C2F74260F38C4937</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C49C2466026A22BF538BCB32C8136ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,17 +117,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8451E0180FD5795F7447D5D1A95708C5</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7FB3E65B563A8F4504608CD4BB477CA</key>
+		<key>B0577C5F4A0E4C0120950EF039422EAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C3A04698AAE4D6124C20602D622956E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D316953CA7FDB615329502BCB61A8FE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

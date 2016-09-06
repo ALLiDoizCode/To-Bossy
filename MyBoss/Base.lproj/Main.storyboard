@@ -63,14 +63,16 @@
                     </view>
                     <connections>
                         <segue destination="2lN-9g-1nc" kind="presentation" identifier="Back" modalTransitionStyle="crossDissolve" id="Iye-56-hff"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Home" id="JUy-pG-VXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jts-sS-weW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731" y="461.25"/>
+            <point key="canvasLocation" x="1641" y="461.25"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Iye-56-hff"/>
+        <segue reference="JUy-pG-VXl"/>
     </inferredMetricsTieBreakers>
 </document>

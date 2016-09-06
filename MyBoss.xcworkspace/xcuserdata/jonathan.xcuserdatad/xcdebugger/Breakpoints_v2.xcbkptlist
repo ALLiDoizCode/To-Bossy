@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyBoss/Controller/RatingPage2ViewController.swift"
-            timestampString = "494670917.457077"
+            timestampString = "494825219.985161"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "didFinishTouchingCosmos(_:)"
             landmarkType = "5">
             <Locations>

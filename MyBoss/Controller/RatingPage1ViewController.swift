@@ -22,6 +22,7 @@ class RatingPage1ViewController: UIViewController {
     
     var email:String!
     var company:String!
+    var rate:Float!
     
     let ratingTexts = ["Very bad", "Bad", "Normal", "Good", "Very good", "Perfect"]
 
@@ -34,6 +35,8 @@ class RatingPage1ViewController: UIViewController {
             self.rateValueLabel.text = String(
                 format: "%.2f / 5.0, %@",
                 rateValue, self.ratingTexts[Int(rateValue)])
+            
+            self.rate = rateValue
         }
         
         emojiRateView.rateValue = 5
@@ -103,12 +106,6 @@ class RatingPage1ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
-        /*UIView.animateWithDuration(3) {
-         
-         self.titleView.layer.opacity = 0
-            
-         }*/
-        
         UIView.animateWithDuration(0.75, delay: 2.5, options: .CurveEaseInOut, animations: { () -> Void in
              self.titleView.alpha = 0
             },
@@ -143,6 +140,7 @@ class RatingPage1ViewController: UIViewController {
             
             controller.email = email
             controller.company = company
+            controller.rate = rate
         }
     }
     
