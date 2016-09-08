@@ -14,6 +14,7 @@ import Cosmos
 import MessageUI
 import SwiftEventBus
 import SCLAlertView
+import SwiftSpinner
 
 class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDelegate {
     
@@ -250,17 +251,25 @@ class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDel
                         showCloseButton: false
                     )
                     
-                    let alertView = SCLAlertView(appearance: appearance)
-            
-                    alertView.addButton("OK") {
-                        print("OK button tapped")
-                        alertView.hideView()
-                        self.performSegueWithIdentifier("Home", sender: self)
-                    }
-                    alertView.showSuccess("Success", subTitle: "Your Evaluation Has Been Sent To Your Boss")
+                    SwiftSpinner.hide({
+                        
+                        
+                        SwiftEventBus.unregister(self, name: "Done")
+                        
+                        let alertView = SCLAlertView(appearance: appearance)
+                        
+                        alertView.addButton("OK") {
+                            print("OK button tapped")
+                            alertView.hideView()
+                            self.performSegueWithIdentifier("Home", sender: self)
+                        }
+                        alertView.showSuccess("Success", subTitle: "Your Evaluation Has Been Sent To Your Boss")
+                    })
                     
                     
                 })
+                
+                SwiftSpinner.show("Saving")
                 
                 self.presenter.sendRate(myRating)
                 

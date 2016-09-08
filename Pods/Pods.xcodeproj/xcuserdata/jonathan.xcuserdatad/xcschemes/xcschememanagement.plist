@@ -59,6 +59,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftSpinner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftValidators.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -87,11 +97,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0D525749D43DEA7F15E6158EE34912A6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1520003FEBEC114D6C84F832AFEDB994</key>
 		<dict>
 			<key>primary</key>
@@ -102,7 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4A6303E449B493748467BC825836BAD7</key>
+		<key>32788479E3A9606445C49D91451D1751</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3287AF4A76B5BCC9A685D546F7C36493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +122,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>58C7B22DE7A9E8C478589D8B57896413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>608B49B5DDACC601EE8044A1931993F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>60A03902FE2033569E6EEBC459411D81</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>710F9A3AEEF91372EEA10EDE1D28E44C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +137,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5E42791FDCB1BDF2D4338F3E4E9F87C</key>
+		<key>7B1F422C47ABF3A3C17438150D3E235A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8540657D6536010C9FFA01FB9D916C47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>989A94CBC8202E8A53A3DDA885B69111</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE1C875FFA46F6EB15B9E3BBC2B66989</key>
+		<key>EA17BE465870E92C325B15B15EBA9719</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA2532E8FD33DC4DE9056D519D63CE2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

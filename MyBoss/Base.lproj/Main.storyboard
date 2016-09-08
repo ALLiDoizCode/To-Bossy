@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="To_Bossy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Good_Boss" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -29,7 +29,7 @@
         <!--Rating Page1 View Controller-->
         <scene sceneID="hBI-FR-eqn">
             <objects>
-                <viewController id="2lN-9g-1nc" customClass="RatingPage1ViewController" customModule="To_Bossy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2lN-9g-1nc" customClass="RatingPage1ViewController" customModule="Good_Boss" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RCX-He-T3W"/>
                         <viewControllerLayoutGuide type="bottom" id="2mW-fe-gm1"/>
@@ -51,7 +51,7 @@
         <!--Rating Page2 View Controller-->
         <scene sceneID="5dX-jQ-3uj">
             <objects>
-                <viewController id="z0m-5N-3gn" customClass="RatingPage2ViewController" customModule="To_Bossy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z0m-5N-3gn" customClass="RatingPage2ViewController" customModule="Good_Boss" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IIk-Lc-mLZ"/>
                         <viewControllerLayoutGuide type="bottom" id="yXs-ZP-7FR"/>

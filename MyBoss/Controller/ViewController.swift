@@ -9,6 +9,8 @@
 import UIKit
 import Material
 import Cartography
+import SwiftValidators
+import SCLAlertView
 
 class ViewController: UIViewController {
     
@@ -77,12 +79,62 @@ class ViewController: UIViewController {
             
             print("we your bosses email")
             
+            let appearance = SCLAlertView.SCLAppearance(
+                kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                showCloseButton: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("OK") {
+                print("OK button tapped")
+                alertView.hideView()
+            }
+            alertView.showWarning("Warning", subTitle: "You Must Provide An Email")
+            
+            return
+        }
+        
+        guard Validator.isEmail(email.text!) == true else {
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                showCloseButton: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("OK") {
+                print("OK button tapped")
+                alertView.hideView()
+            }
+            alertView.showWarning("Warning", subTitle: "Email Is Not Valid")
+            
             return
         }
         
         guard company.text != "" else {
             
             print("we need the name of the company you work for")
+            
+            let appearance = SCLAlertView.SCLAppearance(
+                kTitleFont: UIFont(name: "HelveticaNeue", size: 20)!,
+                kTextFont: UIFont(name: "HelveticaNeue", size: 14)!,
+                kButtonFont: UIFont(name: "HelveticaNeue-Bold", size: 14)!,
+                showCloseButton: false
+            )
+            
+            let alertView = SCLAlertView(appearance: appearance)
+            
+            alertView.addButton("OK") {
+                print("OK button tapped")
+                alertView.hideView()
+            }
+            alertView.showWarning("Warning", subTitle: "You Must Provide A Company Name")
             
             return
         }

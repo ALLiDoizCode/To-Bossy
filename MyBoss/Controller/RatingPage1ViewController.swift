@@ -32,10 +32,8 @@ class RatingPage1ViewController: UIViewController {
         //myTitle.backgroundColor = MaterialColor.brown.darken1
         
         emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
-            self.rateValueLabel.text = String(
-                format: "%.2f / 5.0, %@",
-                rateValue, self.ratingTexts[Int(rateValue)])
             
+            self.rateValueLabel.text = self.ratingTexts[Int(rateValue)]
             self.rate = rateValue
         }
         
