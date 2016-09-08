@@ -44,7 +44,7 @@
 		ABB2EE311D7E681E0088D642 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		ABB2EE341D7E6A130088D642 /* Rating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		ABB2EE371D7E6CFC0088D642 /* PresentRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentRating.swift; sourceTree = "<group>"; };
-		ABD089B71D7BE07300137EC6 /* To Bossy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Bossy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD089B71D7BE07300137EC6 /* Good Boss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good Boss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD089BA1D7BE07300137EC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABD089BC1D7BE07300137EC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABD089BF1D7BE07300137EC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		ABD089B81D7BE07300137EC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABD089B71D7BE07300137EC6 /* To Bossy.app */,
+				ABD089B71D7BE07300137EC6 /* Good Boss.app */,
 				ABD089CB1D7BE07300137EC6 /* MyBossTests.xctest */,
 				ABD089D61D7BE07300137EC6 /* MyBossUITests.xctest */,
 			);
@@ -216,7 +216,7 @@
 			);
 			name = MyBoss;
 			productName = MyBoss;
-			productReference = ABD089B71D7BE07300137EC6 /* To Bossy.app */;
+			productReference = ABD089B71D7BE07300137EC6 /* Good Boss.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ABD089CA1D7BE07300137EC6 /* MyBossTests */ = {
@@ -530,7 +530,7 @@
 				INFOPLIST_FILE = MyBoss/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBoss;
-				PRODUCT_NAME = "To Bossy";
+				PRODUCT_NAME = "Good Boss";
 			};
 			name = Debug;
 		};
@@ -542,7 +542,7 @@
 				INFOPLIST_FILE = MyBoss/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NerdHouse.MyBoss;
-				PRODUCT_NAME = "To Bossy";
+				PRODUCT_NAME = "Good Boss";
 			};
 			name = Release;
 		};

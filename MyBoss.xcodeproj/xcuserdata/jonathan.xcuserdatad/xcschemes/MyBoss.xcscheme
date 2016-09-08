@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ABD089B61D7BE07300137EC6"
-               BuildableName = "To Bossy.app"
+               BuildableName = "Good Boss.app"
                BlueprintName = "MyBoss"
                ReferencedContainer = "container:MyBoss.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ABD089B61D7BE07300137EC6"
-            BuildableName = "To Bossy.app"
+            BuildableName = "Good Boss.app"
             BlueprintName = "MyBoss"
             ReferencedContainer = "container:MyBoss.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ABD089B61D7BE07300137EC6"
-            BuildableName = "To Bossy.app"
+            BuildableName = "Good Boss.app"
             BlueprintName = "MyBoss"
             ReferencedContainer = "container:MyBoss.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ABD089B61D7BE07300137EC6"
-            BuildableName = "To Bossy.app"
+            BuildableName = "Good Boss.app"
             BlueprintName = "MyBoss"
             ReferencedContainer = "container:MyBoss.xcodeproj">
          </BuildableReference>

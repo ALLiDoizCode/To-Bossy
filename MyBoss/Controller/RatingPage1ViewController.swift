@@ -42,19 +42,19 @@ class RatingPage1ViewController: UIViewController {
         emojiRateView.rateValue = 5
     
         next.setTitle("Next", forState: .Normal)
-        next.backgroundColor = MaterialColor.cyan.darken1
+        next.backgroundColor = UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0)
         next.addTarget(self, action: #selector(RatingPage1ViewController.goToPage2), forControlEvents: .TouchUpInside)
         
         rateValueLabel.textAlignment = .Center
         
         myTitle.text = "How was work today?"
         myTitle.numberOfLines = 0
-        myTitle.textColor = MaterialColor.cyan.darken1
+        myTitle.textColor = UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0)
         myTitle.textAlignment = .Center
         myTitle.font = RobotoFont.regularWithSize(48)
         
         back.setTitle("Back", forState: .Normal)
-        back.setTitleColor(MaterialColor.cyan.darken1, forState: .Normal)
+        back.setTitleColor(UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0), forState: .Normal)
         back.addTarget(self, action: #selector(RatingPage1ViewController.goBack), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(rateValueLabel)

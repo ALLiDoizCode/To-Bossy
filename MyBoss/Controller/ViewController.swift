@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         company.textAlignment = .Center
         
         next.setTitle("Next", forState: .Normal)
-        next.backgroundColor = MaterialColor.cyan.darken1
+        next.backgroundColor = UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0)
         next.addTarget(self, action: #selector(ViewController.goToPage1), forControlEvents: .TouchUpInside)
         
-        myTitle.text = "To Bossy"
+        myTitle.text = "Good Boss"
         myTitle.font = RobotoFont.boldWithSize(32)
         myTitle.textAlignment = .Center
         

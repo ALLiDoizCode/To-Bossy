@@ -133,7 +133,7 @@ class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDel
         integrity.font = RobotoFont.mediumWithSize(24)
         
         back.setTitle("Back", forState: .Normal)
-        back.setTitleColor(MaterialColor.cyan.darken1, forState: .Normal)
+        back.setTitleColor(UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0), forState: .Normal)
         back.addTarget(self, action: #selector(RatingPage1ViewController.goBack), forControlEvents: .TouchUpInside)
         
         self.view.addSubview(humor)
