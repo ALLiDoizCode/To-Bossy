@@ -141,6 +141,10 @@ class ViewController: UIViewController {
         
         self.performSegueWithIdentifier("Page1", sender: self)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

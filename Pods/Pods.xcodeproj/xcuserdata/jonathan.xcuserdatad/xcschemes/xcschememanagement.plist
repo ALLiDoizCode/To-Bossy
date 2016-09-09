@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Armchair.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Cartography.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -107,12 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>32788479E3A9606445C49D91451D1751</key>
+		<key>3036B864E87B1E513BFAE6D0CF4C9287</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3287AF4A76B5BCC9A685D546F7C36493</key>
+		<key>39AA7A85C4F1B41E1F896FB9A1623241</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58C7B22DE7A9E8C478589D8B57896413</key>
+		<key>57DDF865E1425796BECA21D83D02A553</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,17 +142,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7B1F422C47ABF3A3C17438150D3E235A</key>
+		<key>9784049E388967CD1C6AD01C12BDF85B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8540657D6536010C9FFA01FB9D916C47</key>
+		<key>A6284E5B2A953DA35192D46320C93981</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>989A94CBC8202E8A53A3DDA885B69111</key>
+		<key>B9105300BB335F1CF7497C418122BE3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAD04DDA9D9B4CAB6C9736E4D3D5C62E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,12 +167,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA17BE465870E92C325B15B15EBA9719</key>
+		<key>C80CF32D1DB28142A1F20135BDEAB66E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA2532E8FD33DC4DE9056D519D63CE2F</key>
+		<key>F02DA4593445E9F8AE8CF5303045DE5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

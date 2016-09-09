@@ -11,6 +11,7 @@ import TTGEmojiRate
 import Material
 import Cartography
 
+
 class RatingPage1ViewController: UIViewController {
     
     var titleView:MaterialView = MaterialView()
@@ -31,14 +32,15 @@ class RatingPage1ViewController: UIViewController {
         
         //myTitle.backgroundColor = MaterialColor.brown.darken1
         
-        emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in
+        self.rateValueLabel.text = "Slide My Face"
+        
+        emojiRateView.rateValueChangeCallback = {(rateValue: Float) -> Void in 
+
             
             self.rateValueLabel.text = self.ratingTexts[Int(rateValue)]
             self.rate = rateValue
         }
         
-        emojiRateView.rateValue = 5
-    
         next.setTitle("Next", forState: .Normal)
         next.backgroundColor = UIColor(red:0.11, green:0.79, blue:0.66, alpha:1.0)
         next.addTarget(self, action: #selector(RatingPage1ViewController.goToPage2), forControlEvents: .TouchUpInside)
@@ -105,15 +107,18 @@ class RatingPage1ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         
         UIView.animateWithDuration(0.75, delay: 2.5, options: .CurveEaseInOut, animations: { () -> Void in
-             self.titleView.alpha = 0
+            self.titleView.alpha = 0
+            
             },
             completion: nil)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     func goToPage2(){
         

@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.1)
+  - Armchair (0.1.2)
   - Cartography (0.6.0)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
@@ -16,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.4.1)
+  - Armchair (~> 0.1.2)
   - Cartography (~> 0.6.0)
   - ChameleonFramework/Swift
   - Cosmos (from `https://github.com/marketplacer/Cosmos.git`, branch `swift-2.3`)
@@ -40,6 +42,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Armchair: 10f49453001a25036e1dc8e74e4f1b699add562c
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
@@ -52,6 +55,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TTGEmojiRate: 52bfbd96db1616617f9257d249030e3cbef748dc
 
-PODFILE CHECKSUM: 899c06563eda75cf64bcba6955ed26e50e3b7b15
+PODFILE CHECKSUM: 7e92b6e2c7bb92d3bb0dc60f5383bf9cd01249b1
 
 COCOAPODS: 1.0.1

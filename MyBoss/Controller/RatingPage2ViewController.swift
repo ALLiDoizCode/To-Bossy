@@ -280,6 +280,10 @@ class RatingPage2ViewController: UIViewController,MFMailComposeViewControllerDel
         //self.ratingLabel.text = RatingPage2ViewController.formatValue(rating)
         //ratingLabel.textColor = UIColor(red: 183/255, green: 186/255, blue: 204/255, alpha: 1)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

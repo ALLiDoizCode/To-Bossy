@@ -8,12 +8,14 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import Armchair
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let APP_ID = "com.NerdHouse.MyBoss"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -21,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Fade) // with animation option.
         
         IQKeyboardManager.sharedManager().enable = true
+        
+        Armchair.appID(APP_ID)
         
         return true
     }
